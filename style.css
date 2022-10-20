@@ -1,0 +1,242 @@
+@font-face {
+		font-family: 'Campanella';
+		src: url('fonts/Campanella.eot');
+		src: url('fonts/Campanella.otf') format('opentype'),
+			 url('fonts/Campanella.woff') format('woff'),
+			 url('fonts/Campanella.ttf') format('truetype'),
+			 url('fonts/Campanella.svg') format('svg');
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: 'Gilroy';
+		src: url('fonts/Gilroy-Light.eot');
+		src: url('fonts/Gilroy-Light.otf') format('opentype'),
+			 url('fonts/Gilroy-Light.woff') format('woff'),
+			 url('fonts/Gilroy-Light.ttf') format('truetype'),
+			 url('fonts/Gilroy-Light.svg') format('svg');
+		font-style: normal;
+		font-weight: light;
+	}
+@font-face {
+		font-family: 'Gilroy';
+		src: url('fonts/Gilroy-ExtraBold.eot');
+		src: url('fonts/Gilroy-ExtraBold.otf') format('opentype'),
+			 url('fonts/Gilroy-ExtraBold.woff') format('woff'),
+			 url('fonts/Gilroy-ExtraBold.ttf') format('truetype'),
+			 url('fonts/Gilroy-ExtraBold.svg') format('svg');
+		font-style: normal;
+		font-weight: bold;
+	}
+
+body{
+	margin: 0;
+	height: 100vh;
+	overflow: auto;
+	background: #1A5B35;
+}
+
+.content {
+	max-width: 662px;
+	margin: 0 auto;
+	padding: 250px 0 114px 0;
+	flex: 1 1 100%;
+}
+.new-year__title {
+	font-family: 'Campanella';
+	font-size: 72px;
+	line-height: 115px;
+	text-align: center;
+	color: #d9c088;
+	margin: 0 0 10px 0;
+}
+.new-year__text {
+	font-family: 'Gilroy';
+	font-weight: light;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.new-year__text p{
+	margin: 0;
+}
+.new-year__subtext {
+	font-family: 'Gilroy';
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.new-year__subtext p{
+	margin: 0;
+}
+.img-text{
+	margin: 15px 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.new-year__img {
+	position: absolute;
+	top: -40px;
+	right: 18%;
+}
+.new-year__img_megacom {
+	display: flex;
+	justify-content: center;
+	margin: 143px 0 0px 0;
+}
+.empty{
+	width: 10px;
+	height: 5px;
+}
+.petal {}
+.petal__block1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.petal__block2 {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.petal__block3 {
+	position: fixed;
+	bottom: 75px;
+	left: 0;
+}
+.petal__block4{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.turn{
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: none;
+	font-family: 'Gilroy';
+	font-size: 12px;
+	line-height: 11px;
+	
+	max-width: 58px;
+}
+.turn a{
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media (max-width: 992px) {
+	.content{
+		max-width: 529.6px;
+	}
+	.new-year__title {
+		font-size: 57.6px;
+		line-height: 92px;
+	}
+	.new-year__text{
+		font-size: 14.4px;
+		line-height: 17.6px;
+		letter-spacing: 1.6px;
+	}
+	.new-year__img {
+	position: absolute;
+	top: -40px;
+	right: 12%;
+	}
+}
+
+@media (max-width: 768px) {
+	.content{
+		max-width: 350px;
+	}
+	.new-year__title {
+		font-size: 57.6px;
+		line-height: 42px;
+		margin: 0 0 20px 0;
+	}
+	.new-year__text{
+		font-size: 14.4px;
+		line-height: 17.6px;
+		letter-spacing: 1.6px;
+	}
+	.new-year__img {
+	position: absolute;
+	top: -40px;
+	right: -8%;
+	}
+}
+
+@media (max-width: 576px) {
+	.content{
+		max-width: 250px;
+	}
+	.new-year__title {
+		font-size: 47.6px;
+		line-height: 42px;
+		margin: 0 0 20px 0;
+	}
+	.new-year__text{
+		font-size: 14.4px;
+		line-height: 17.6px;
+		letter-spacing: 1.6px;
+	}
+	.new-year__img {
+	opacity: 0.5
+	}
+}
+
+@media (max-width: 425px){
+	.content{
+		max-width: 90%;
+		padding: 100px 0 40px 0;
+	}
+	.petal__block4 img, .petal__block2 img{
+		display: none;
+	}
+	.petal__block1{
+		top: -20px;
+		left: 0px;
+		
+	}
+	.petal__block1 img{
+		width: 100px;
+	}
+	.petal__block3{
+		top: 70px;
+		left: 80%;
+	}
+	.new-year__img_megacom {
+		margin: 65px 0 0 0;
+	}
+	.new-year__img{
+		opacity: 1
+	}
+	.turn{
+		display: block;
+		top: 40px;
+		right: 20px;
+	}
+}
+
+@media (max-width: 320px){
+	.content{
+		padding: 100px 0 40px 0;
+	}
+	.new-year__img img{
+		width: 100px;
+		
+	}
+	.turn{
+		display: block;
+		top: 40px;
+		right: 5px;
+	}
+}
+
